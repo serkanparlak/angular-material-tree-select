@@ -1,0 +1,25 @@
+.look-right {
+  transition: 0.3s;
+  transform: rotate(0);
+}
+.look-bottom {
+  transform: rotate(90deg);
+}
+
+.expand {
+  animation: expand 0.3s ease forwards;
+  min-height: 0
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    height: 40px;
+  }
+}
